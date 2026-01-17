@@ -1,4 +1,4 @@
-# Blockamok Remix² - Platforms & Compatibility
+# Blockamok³ - Platforms & Compatibility
 This Markdown is made to list all platforms supported by Blockamok Remix² as well as their compatibility (Runs well or not)
 
 ## Compatibility Score
@@ -44,7 +44,7 @@ This Markdown is made to list all platforms supported by Blockamok Remix² as we
 | Raspberry Pi | Coming Soon | None |
 | SNES | Coming Soon | None |
 | Switch | Stable Releases | 🟦 |
-| Web (WASM) | In Development | ⬛ |
+| Web (WASM) | Coming Soon | None |
 | Wii | Stable Releases | 🟨 |
 | Wii U | Stable Releases | Unknown, needs testing |
 | Windows (10 - 11) | Stable Releases | 🟪 |
