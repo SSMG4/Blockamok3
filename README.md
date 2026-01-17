@@ -1,7 +1,7 @@
-<h1 align="center">Blockamok Remix</h1>
+<h1 align="center">Blockamok³</h1>
 
 <p align="center"><b>A CPU-only, from-scratch 3D game written in C, where you dodge blocks<br>
-Available for PC, Linux, Android, Switch, Wii U, Wii, GameCube, 3DS, PSP, and Vita</b></p>
+Available for all the platforms listed <a href="https://github.com/SSMG4/Blockamok3/blob/main/COMPATIBILITY.md" target="_blank" rel="noopener noreferrer">here</a></b></p>
 
 <p align="center">You accidentally fly your spaceship into a wormhole. To your shock, you find yourself in an alternate dimension filled with blocks. The throttle on your spaceship is broken and keeps increasing the speed. How far can you make it?</p>
 
@@ -9,23 +9,17 @@ Available for PC, Linux, Android, Switch, Wii U, Wii, GameCube, 3DS, PSP, and Vi
 
 ## Background
 
-Blockamok Remix is a significant update to [Blockamok](https://github.com/carltheperson/blockamok), a game originally made by Carl Riis to _"challenge [himself] to create a 3D game without any pre-made 3D engine or utilities"_.
+Blockamok³ is an extension to [Blockamok Remix](https://github.com/Mode8fx/blockamok), which itself is an update of the game [Blockamok](https://github.com/carltheperson/blockamok), a game originally made by Carl Riis to _"challenge [himself] to create a 3D game without any pre-made 3D engine or utilities"_.
 
-This version adds many improvements including:
-- Widescreen
-- Customizable gameplay settings
-- Controller support + a new control scheme
-- New visual settings
-- Music and sound effects
-- A full menu, title screen, instructions, etc.
-- Scoring system polish
-- High score saving
-- Console ports
-- Performance improvements for weaker hardware [(see performance metrics comparing Remix v1.0 to v1.1 here)](https://github.com/Mode8fx/blockamok/blob/main/Console%20Performance%20Metrics%20v1.0%20to%20v1.1.png)
+This version adds many platforms and bugfixes to the game such as:
+- The web (via WASM)
+- Android TV
+- SNES
+- And much more!
 
 ## How can I play it?
 
-[Check the latest release here.](https://github.com/Mode8fx/blockamok/releases)
+[Check the latest release here.](https://github.com/SSMG4/Blockamok3/releases)
 
 Keep in mind that due to hardware and library differences, this game runs better on some systems than others, and it's not necessarily determined by the power of the system. For example, the GameCube and Wii versions both run better than Wii U.
 
@@ -42,28 +36,36 @@ The following additional defines exist and may be needed:
 
 ## How to Compile
 
-#### PC (Visual Studio)
+### PC (Visual Studio)
 1. Download the latest SDL2 development libraries (VC versions):
 - [SDL2](https://github.com/libsdl-org/SDL/releases)
 - [SDL2_ttf](https://github.com/libsdl-org/SDL_ttf/releases)
 - [SDL2_mixer](https://github.com/libsdl-org/SDL_mixer/releases)
 2. Extract the above ZIP files into a folder called SDL2, which should be located in the Blockamok directory.
-#### PC (MSYS2)
+  
+### PC (MSYS2)
 Install MSYS2 and the latest SDL2 development libraries (along with mixer and TTF), open MSYS2 MINGW64 (64-bit) or MSYS2 MINGW32 (32-bit), and run `make -f Makefiles/Makefile_pc` (or `make -f Makefiles/Makefile_pc_x86` for 32-bit).
 3. From there, use the Visual Studio project file from the repo with Visual Studio 2022.
-#### Switch
+
+### Switch
 Install devkitPro and switch-portlibs (which includes SDL2 for Switch), then run `make -f Makefiles/Makefile_switch`.
-#### Wii U
+
+### Wii U
 Install devkitPro, Wii U Toolkit, and SDL2 for Wii U, then build with CMake. I've included a `make_wii_u.sh` file for convenience once you have everything installed.
-#### Wii
+
+### Wii
 Install devkitPro and SDL2 for Wii, then run `make -f Makefiles/Makefile_wii`.
-#### GameCube
+
+### GameCube
 Install devkitPro and SDL2 for GameCube, then run `make -f Makefiles/Makefile_gc`.
-#### 3DS
+
+### 3DS
 Install devkitPro and SDL2 for 3DS, then run `make -f Makefiles/Makefile_3ds`.
-#### Vita
+
+### Vita
 Install VitaSDK, then build with CMake. I've included a `make_vita.sh` file for convenience once you have everything installed.
-#### PSP
+
+### PSP
 Install [the PSPDEV toolchain](https://pspdev.github.io/), which should also come with SDL2, SDL2_ttf, and SDL2_mixer (Linux or WSL is strongly recommended), then run `make -f Makefiles/Makefile_psp`.
 
 ## License
